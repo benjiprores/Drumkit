@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drums</title>
+</head>
+<body>
+    <button id="crash">Crash</button>
+    <button id="kick">Kick</button>
+    <button id="snare">Snare</button>
+    <button id="tom">Tom</button>
+
+    <audio id="crashAudio" src="./sounds/crash.mp3"></audio>
+    <audio id="kickAudio" src="./sounds/kick.mp3"></audio>
+    <audio id="snareAudio" src="./sounds/snare.mp3"></audio>
+    <audio id="tomAudio" src="./sounds/tom.mp3"></audio>
+
+    <script>
+        const crashPlay = document.getElementById('crash')
+        const kickPlay = document.getElementById('kick')
+        const snarePlay = document.getElementById('snare')
+        const tomPlay = document.getElementById('tom')
+
+        const crashAudio = document.getElementById('crashAudio')
+        const kickAudio = document.getElementById('crashAudio')
+        const snareAudio = document.getElementById('crashAudio')
+        const tomAudio = document.getElementById('crashAudio')
+
+        crashPlay.addEventListener('click', function() {
+            crashAudio.play()
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumkit</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Poppins';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 2.5em 5em;
+        outline: none;
+        border: 3px rgb(229, 229, 229) solid;
+        cursor: pointer;
+        margin-top: 5em;
+        margin-right: 1em;
+        color: white;
+        border-radius: .5em;
+
+    }
+
+    .crash {
+        background: url(img/crash.png);
+        background-repeat: none;
+        background-position: top;
+        background-size: cover;
+        color: black;
+    }
+
+    .kick {
+        background: url(img/kick.png);
+        background-repeat: none;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .snare {
+        background: url(img/snare.png);
+        background-repeat: none;
+        background-position: top;
+        background-size: cover;
+    }
+    .tom {
+        background: url(img/tom.png);
+        background-repeat: none;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h1>DRUM KITS</h1>
+        <button class="crash" onclick="playSound('crash')">CRASH</button>
+        <button class="kick" onclick="playSound('kick')">KICK</button>
+        <button class="snare" onclick="playSound('snare')">SNARE</button>
+        <button class="tom" onclick="playSound('tom')">TOM</button>
+    </div>
+
+    <script src="index.js"> </script>
+</body>
+</html>
